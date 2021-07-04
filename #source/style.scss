@@ -113,11 +113,13 @@ body {
 }
 
 .button {
+    display: inline-block;
     padding: 15px 30px;
     border-radius: 8px;
     border: 1px solid #c9d1d4;
     background-color: unset;
     opacity: 1;
+    text-align: center;
     transition: all .3s ease;
 }
 
@@ -311,4 +313,151 @@ body {
         margin-top: 25px;
     }
     &__image {}
+}
+
+.results {
+    padding-top: 110px;
+    padding-bottom: 128px;
+    background-color: #323555;
+    &__wrapper {}
+    &__title {
+        margin-bottom: 56px;
+        padding: 0 15px;
+        text-align: center;
+        color: #fff;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+    &__card {
+        width: 46.84%;
+        margin: 15px;
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 12px;
+    }
+    &__description {
+        margin-top: 128px;
+        margin-bottom: 50px;
+        padding: 0 15px;
+        color: #fff;
+        text-align: center;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        padding: 0 15px;
+    }
+    &__button {
+        font-size: 18px;
+        color: #fff;
+        &:last-child {
+            margin-left: 20px;
+            &:hover {
+                background-color: #fff;
+                color: #000;
+            }
+        }
+        &_painted {
+            background-color: #fff;
+            color: #000;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.card {
+    &_auto {
+        &::before {
+            background-image: url('../img/5-screen/auto.png');
+        }
+    }
+    &_food {
+        &::before {
+            background-image: url('../img/5-screen/food.png');
+        }
+    }
+    &_coworking {
+        &::before {
+            background-image: url('../img/5-screen/coworking.png');
+        }
+    }
+    &_woman {
+        &::before {
+            background-image: url('../img/5-screen/woman.png');
+        }
+    }
+    &__header {
+        position: relative;
+        padding-left: 84px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid rgba(0, 0, 0, 10%);
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 64px;
+            height: 64px;
+            background-size: contain;
+        }
+    }
+    &__title {
+        color: rgba(17, 56, 91, 1);
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 12px;
+        padding-top: 4px;
+    }
+    &__subtitle {
+        color: #748A9C;
+        font-size: 16px;
+    }
+    &__count {
+        display: flex;
+        margin-top: 36px;
+        font-size: 32px;
+        font-weight: 600;
+        color: rgba(17, 56, 91, 1);
+    }
+    &__count-number {}
+    &__count-percent {
+        position: relative;
+        margin-left: 40px;
+        color: #45E254;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            transform: translateY(-50%);
+            display: block;
+            width: 15px;
+            height: 28px;
+            background-image: url('../img/5-screen/arrow.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    &__description {
+        color: #11385B;
+        opacity: 0.7;
+        font-size: 14px;
+        line-height: 1.29;
+        margin-top: 6px;
+    }
+    &__progress {
+        color: rgba(17, 56, 91, 1);
+        margin-top: 36px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.29;
+    }
 }
