@@ -183,6 +183,7 @@ body {
 }
 .main__image {
   max-width: 685px;
+  height: auto;
 }
 
 .container {
@@ -299,6 +300,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.display__image {
+  height: auto;
+}
 .display__container-wrapper {
   padding-left: 100px;
   padding-right: 15px;
@@ -349,6 +353,10 @@ body {
 .budget__subtitle {
   margin-top: 25px;
 }
+.budget__image {
+  height: auto;
+}
+
 .results {
   padding-top: 5.73%;
   padding-bottom: 6.67%;

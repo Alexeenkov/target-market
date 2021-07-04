@@ -178,6 +178,7 @@ body {
     }
     &__image {
         max-width: 685px;
+        height: auto;
     }
 }
 
@@ -271,7 +272,9 @@ body {
             align-items: center;
         }
     }
-    &__image {}
+    &__image {
+        height: auto;
+    }
     &__container-wrapper {
         padding-left: 100px;
         padding-right: 15px;
@@ -314,7 +317,9 @@ body {
     &__subtitle {
         margin-top: 25px;
     }
-    &__image {}
+    &__image {
+        height: auto;
+    }
 }
 
 .results {
