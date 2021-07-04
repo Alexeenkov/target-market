@@ -178,7 +178,7 @@ body {
     }
     &__image {
         max-width: 685px;
-        height: auto;
+        max-height: 308px;
     }
 }
 
@@ -273,7 +273,7 @@ body {
         }
     }
     &__image {
-        height: auto;
+        max-height: 378px;
     }
     &__container-wrapper {
         padding-left: 100px;
@@ -318,7 +318,7 @@ body {
         margin-top: 25px;
     }
     &__image {
-        height: auto;
+        max-height: 318px;
     }
 }
 

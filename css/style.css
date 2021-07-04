@@ -183,7 +183,7 @@ body {
 }
 .main__image {
   max-width: 685px;
-  height: auto;
+  max-height: 308px;
 }
 
 .container {
@@ -301,7 +301,7 @@ body {
           align-items: center;
 }
 .display__image {
-  height: auto;
+  max-height: 378px;
 }
 .display__container-wrapper {
   padding-left: 100px;
@@ -354,7 +354,7 @@ body {
   margin-top: 25px;
 }
 .budget__image {
-  height: auto;
+  max-height: 318px;
 }
 
 .results {
