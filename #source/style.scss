@@ -319,7 +319,10 @@ body {
     padding-top: 110px;
     padding-bottom: 128px;
     background-color: #323555;
-    &__wrapper {}
+    &__wrapper {
+        max-width: 980px;
+        margin: 0 auto;
+    }
     &__title {
         margin-bottom: 56px;
         padding: 0 15px;
@@ -330,8 +333,6 @@ body {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        max-width: 980px;
-        margin: 0 auto;
     }
     &__card {
         width: 46.84%;
@@ -459,5 +460,73 @@ body {
         font-size: 32px;
         font-weight: 600;
         line-height: 1.29;
+    }
+}
+
+.automation {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    &__wrapper {
+        width: 100%;
+        max-width: 920px;
+        margin: 0 auto;
+    }
+    &__title {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 750px;
+    }
+    &__description {
+        text-align: center;
+        margin: 30px auto 72px;
+        max-width: 800px;
+        color: rgba(17, 56, 91, 1);
+        font-size: 24px;
+        line-height: 1.33;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        padding: 30px;
+        width: 50%;
+    }
+    &__subtitle {
+        margin-top: 216px;
+        text-align: center;
+    }
+    &__buttons {
+        margin-top: 42px;
+        display: flex;
+        justify-content: center;
+    }
+    &__button {
+        &:last-child {
+            margin-left: 20px;
+        }
+    }
+}
+
+.item {
+    text-align: center;
+    &__image {
+        margin: 0 auto;
+        width: 80px;
+        height: 80px;
+        & img {
+            width: 100%;
+        }
+    }
+    &__title {
+        margin-top: 16px;
+        color: rgba(17, 56, 91, 1);
+        font-size: 24px;
+    }
+    &__description {
+        margin-top: 16px;
+        color: rgba(88, 93, 120, 1);
+        font-size: 18px;
+        line-height: 1.11;
     }
 }
