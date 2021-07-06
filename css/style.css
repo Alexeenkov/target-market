@@ -372,10 +372,18 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
   padding: 0;
+}
+.results__cards_pc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .results__card {
   width: 46.84%;
@@ -417,6 +425,12 @@ body.lock {
 }
 .results__button_painted:hover {
   opacity: 0.8;
+}
+
+.slider {
+  display: none;
+  max-width: 420px;
+  margin: 0 auto;
 }
 
 .card_auto::before {
@@ -982,19 +996,31 @@ body.lock {
     padding-bottom: 20%;
   }
   .results__cards {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 370px;
     margin: 0 auto;
+  }
+  .results__cards_pc {
+    display: none;
   }
   .results__card {
     padding: 40px 30px;
     width: 100%;
-    max-width: 350px;
+    margin: 0px;
   }
   .results__button {
     font-size: 17px;
+  }
+
+  .slider {
+    max-width: 400px;
+    display: block;
   }
 
   .automation {

@@ -1,15 +1,14 @@
-window.addEventListener("optimizedResize", () => {
-    if (window.screen.width = 700) {
-        console.log('Опачки, работает кажется');
-    }
-});
 // Инициализируем Swiper
-if (screen.width <= 700) {
-    new Swiper('.slider', {
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-
-}
+new Swiper('.slider', {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    // Отступ между слайдами
+    spaceBetween: 20,
+    autoHeight: true,
+    keyboard: {
+        enabled: true,
+    },
+    odserver: true,
+    observeParents: true,
+    observeSlideChildren: true,
+});

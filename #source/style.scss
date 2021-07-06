@@ -335,9 +335,13 @@ body.lock {
     }
     &__cards {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         width: 100%;
         padding: 0;
+        &_pc {
+            display: flex;
+        }
     }
     &__card {
         width: 46.84%;
@@ -376,6 +380,12 @@ body.lock {
             }
         }
     }
+}
+
+.slider {
+    display: none;
+    max-width: 420px;
+    margin: 0 auto;
 }
 
 .card {
@@ -873,18 +883,29 @@ body.lock {
         padding-top: 21%;
         padding-bottom: 20%;
         &__cards {
+            justify-content: flex-start;
+            flex-wrap: nowrap;
             align-items: center;
-            max-width: 370px;
             margin: 0 auto;
+            &_pc {
+                display: none;
+            }
         }
         &__card {
             padding: 40px 30px;
             width: 100%;
-            max-width: 350px;
+            margin: 0px;
+            &:nth-child(n+2) {
+                // margin-left: 1px;
+            }
         }
         &__button {
             font-size: 17px;
         }
+    }
+    .slider {
+        max-width: 400px;
+        display: block;
     }
     .automation {
         padding-top: 20%;
