@@ -1,0 +1,181 @@
+ErrorDocument 403 /page5438755.html
+ErrorDocument 404 /page5438755.html
+
+DirectoryIndex page5399153.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://xn----7sbbkkc1c2agidee\.xn--p1ai/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.xn----7sbbkkc1c2agidee.xn--p1ai [NC]
+RewriteRule ^(.*)$ https://xn----7sbbkkc1c2agidee\.xn--p1ai/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^corporate$ page968228.html [NC]
+RewriteRule ^corporate/$ page968228.html [NC]
+
+RewriteRule ^target$ page308000.html [NC]
+RewriteRule ^target/$ page308000.html [NC]
+
+RewriteRule ^facebook$ page988920.html [NC]
+RewriteRule ^facebook/$ page988920.html [NC]
+
+RewriteRule ^instagram_old$ page988988.html [NC]
+RewriteRule ^instagram_old/$ page988988.html [NC]
+
+RewriteRule ^brif$ page1127036.html [NC]
+RewriteRule ^brif/$ page1127036.html [NC]
+
+RewriteRule ^brif-facebook$ page1127356.html [NC]
+RewriteRule ^brif-facebook/$ page1127356.html [NC]
+
+RewriteRule ^instagram-v2$ page1147622.html [NC]
+RewriteRule ^instagram-v2/$ page1147622.html [NC]
+
+RewriteRule ^instagram_v3$ page1184796.html [NC]
+RewriteRule ^instagram_v3/$ page1184796.html [NC]
+
+RewriteRule ^brif_v3$ page1184940.html [NC]
+RewriteRule ^brif_v3/$ page1184940.html [NC]
+
+RewriteRule ^zayavka_otpravlena$ page1184976.html [NC]
+RewriteRule ^zayavka_otpravlena/$ page1184976.html [NC]
+
+RewriteRule ^bonus_$ page1223988.html [NC]
+RewriteRule ^bonus_/$ page1223988.html [NC]
+
+RewriteRule ^bonus_ok$ page1225764.html [NC]
+RewriteRule ^bonus_ok/$ page1225764.html [NC]
+
+RewriteRule ^context$ page1225930.html [NC]
+RewriteRule ^context/$ page1225930.html [NC]
+
+RewriteRule ^instagram-v4$ page1265986.html [NC]
+RewriteRule ^instagram-v4/$ page1265986.html [NC]
+
+RewriteRule ^instagram$ page1269864.html [NC]
+RewriteRule ^instagram/$ page1269864.html [NC]
+
+RewriteRule ^facebook_target$ page1295566.html [NC]
+RewriteRule ^facebook_target/$ page1295566.html [NC]
+
+RewriteRule ^vkontakte$ page1348582.html [NC]
+RewriteRule ^vkontakte/$ page1348582.html [NC]
+
+RewriteRule ^instagram_target$ page1431956.html [NC]
+RewriteRule ^instagram_target/$ page1431956.html [NC]
+
+RewriteRule ^policy$ page1482202.html [NC]
+RewriteRule ^policy/$ page1482202.html [NC]
+
+RewriteRule ^roistat$ page1516358.html [NC]
+RewriteRule ^roistat/$ page1516358.html [NC]
+
+RewriteRule ^kp$ page1519062.html [NC]
+RewriteRule ^kp/$ page1519062.html [NC]
+
+RewriteRule ^vacancy$ page1612694.html [NC]
+RewriteRule ^vacancy/$ page1612694.html [NC]
+
+RewriteRule ^partners$ page1631642.html [NC]
+RewriteRule ^partners/$ page1631642.html [NC]
+
+RewriteRule ^anketa_target$ page1789629.html [NC]
+RewriteRule ^anketa_target/$ page1789629.html [NC]
+
+RewriteRule ^flowers$ page1928512.html [NC]
+RewriteRule ^flowers/$ page1928512.html [NC]
+
+RewriteRule ^23452345$ page1965574.html [NC]
+RewriteRule ^23452345/$ page1965574.html [NC]
+
+RewriteRule ^promo$ page2096475.html [NC]
+RewriteRule ^promo/$ page2096475.html [NC]
+
+RewriteRule ^instagram_garanty$ page2241653.html [NC]
+RewriteRule ^instagram_garanty/$ page2241653.html [NC]
+
+RewriteRule ^calc$ page2427582.html [NC]
+RewriteRule ^calc/$ page2427582.html [NC]
+
+RewriteRule ^price$ page2432477.html [NC]
+RewriteRule ^price/$ page2432477.html [NC]
+
+RewriteRule ^webinar$ page2461549.html [NC]
+RewriteRule ^webinar/$ page2461549.html [NC]
+
+RewriteRule ^instagram_target_20_old$ page2589118.html [NC]
+RewriteRule ^instagram_target_20_old/$ page2589118.html [NC]
+
+RewriteRule ^analitics-and-trafic$ page2989490.html [NC]
+RewriteRule ^analitics-and-trafic/$ page2989490.html [NC]
+
+RewriteRule ^instagram_20_vip$ page3181286.html [NC]
+RewriteRule ^instagram_20_vip/$ page3181286.html [NC]
+
+RewriteRule ^instagram_20_hot$ page3181296.html [NC]
+RewriteRule ^instagram_20_hot/$ page3181296.html [NC]
+
+RewriteRule ^instagram_20_gos$ page3181316.html [NC]
+RewriteRule ^instagram_20_gos/$ page3181316.html [NC]
+
+RewriteRule ^instagram_20_x2$ page3181338.html [NC]
+RewriteRule ^instagram_20_x2/$ page3181338.html [NC]
+
+RewriteRule ^roistat-partner$ page3196606.html [NC]
+RewriteRule ^roistat-partner/$ page3196606.html [NC]
+
+RewriteRule ^quiz$ page3834326.html [NC]
+RewriteRule ^quiz/$ page3834326.html [NC]
+
+RewriteRule ^ads-leads-generator$ page1956965.html [NC]
+RewriteRule ^ads-leads-generator/$ page1956965.html [NC]
+
+RewriteRule ^confirm_pay$ page4372836.html [NC]
+RewriteRule ^confirm_pay/$ page4372836.html [NC]
+
+RewriteRule ^roistat_brif$ page4373730.html [NC]
+RewriteRule ^roistat_brif/$ page4373730.html [NC]
+
+RewriteRule ^instagram_target_20$ page5354700.html [NC]
+RewriteRule ^instagram_target_20/$ page5354700.html [NC]
+
+RewriteRule ^big_brand$ page5495518.html [NC]
+RewriteRule ^big_brand/$ page5495518.html [NC]
+
+RewriteRule ^test$ page7846740.html [NC]
+RewriteRule ^test/$ page7846740.html [NC]
+
+RewriteRule ^analitics$ page1659362.html [NC]
+RewriteRule ^analitics/$ page1659362.html [NC]
+
+RewriteRule ^testoffer$ page8173237.html [NC]
+RewriteRule ^testoffer/$ page8173237.html [NC]
+
+RewriteRule ^leads_generations_system$ page8255682.html [NC]
+RewriteRule ^leads_generations_system/$ page8255682.html [NC]
+
+RewriteRule ^500error$ page8438837.html [NC]
+RewriteRule ^500error/$ page8438837.html [NC]
+
+RewriteRule ^quiz1$ page10349019.html [NC]
+RewriteRule ^quiz1/$ page10349019.html [NC]
+
+RewriteRule ^econemy$ page10363782.html [NC]
+RewriteRule ^econemy/$ page10363782.html [NC]
+
+RewriteRule ^leads$ page10394606.html [NC]
+RewriteRule ^leads/$ page10394606.html [NC]
+
+RewriteRule ^footer$ page10446010.html [NC]
+RewriteRule ^footer/$ page10446010.html [NC]
+
+RewriteRule ^amocrm$ page11204533.html [NC]
+RewriteRule ^amocrm/$ page11204533.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3139-6239-4234-a462-653337396566/favicon.ico [R=302,L]
+

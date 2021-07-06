@@ -7,20 +7,29 @@
     <!-- ! Предзагрузка шрифтов -->
     <link rel="preload" href="fonts/YandexSansText-Regular.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="fonts/YandexSansText-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    <!-- ! Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <!--! Подключение файлов CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Таргет Мастер</title>
 </head>
 
-<body>
-    <header class="header">
+<body style="overflow-x:hidden;" class="lock-padding">
+    <header class="header lock-padding">
         <div class="wrapper header__wrapper">
             <a href="index.html" class="header__logo">
                 <img src="img/logo.png" alt="Таргет Мастер">
             </a>
             <div class="header__buttons">
                 <a href="#" class="button header__button">Оставить заявку</a>
-                <a href="#" class="button header__button">Обратный звонок</a>
+                <a href="#popup" class="button header__button popup-link">Обратный звонок</a>
             </div>
         </div>
     </header>
@@ -32,7 +41,7 @@
                     <div class="main__subtitle">Таргетинг на основе Big Data Instagram — новый способ найти свою аудиторию в соцсетях</div>
                     <div class="main__buttons">
                         <a href="#0" class="button main__button main__button_painted">Запустить рекламу</a>
-                        <a href="#0" class="button main__button">Провести аудит</a>
+                        <a href="#popup" id="audit-button" class="button main__button popup-link">Провести аудит</a>
                     </div>
                 </div>
             </div>
@@ -84,8 +93,8 @@
     <div class="results">
         <div class="results__wrapper">
             <h3 class="main__title results__title">По статистике количество потенциальных клиентов с&nbsp;рекламой в&nbsp;facebook & instagram вырастает до&nbsp;3,5&nbsp;раз</h3>
-            <ul class="results__cards">
-                <li class="results__card card">
+            <ul class="results__cards results__cards_pc">
+                <li class="card results__card">
                     <div class="card__header card_auto">
                         <div class="card__title">Автозапчасти</div>
                         <div class="card__subtitle">152 дня с "Таргет Мастер"</div>
@@ -98,7 +107,7 @@
                     <div class="card__progress">190 руб.</div>
                     <div class="card__description">в среднем <br> за одно обращение</div>
                 </li>
-                <li class="results__card card">
+                <li class="card results__card">
                     <div class="card__header card_food">
                         <div class="card__title">Заказ банкетов на теплоходе</div>
                         <div class="card__subtitle">92 дня с "Таргет Мастер"</div>
@@ -111,7 +120,7 @@
                     <div class="card__progress">на 1 797 000 руб.</div>
                     <div class="card__description">продаж с рекламы <br> в instagram&facebook</div>
                 </li>
-                <li class="results__card card">
+                <li class="card results__card">
                     <div class="card__header card_coworking">
                         <div class="card__title">Коворкинг</div>
                         <div class="card__subtitle">35 дня с "Таргет Мастер"</div>
@@ -127,7 +136,7 @@
                     </div>
                     <div class="card__description">целевых действий <br> в карточке организации</div>
                 </li>
-                <li class="results__card card">
+                <li class="card results__card">
                     <div class="card__header card_woman">
                         <div class="card__title">Женская одежда</div>
                         <div class="card__subtitle">210 дней с "Таргет Мастер"</div>
@@ -141,10 +150,70 @@
                     <div class="card__description">выручки с рекламы <br> в facebook & instagram</div>
                 </li>
             </ul>
+            <div class="slider swiper-container">
+                <ul class="results__cards swiper-wrapper">
+                    <li class="card swiper-slide results__card">
+                        <div class="card__header card_auto">
+                            <div class="card__title">Автозапчасти</div>
+                            <div class="card__subtitle">152 дня с "Таргет Мастер"</div>
+                        </div>
+                        <div class="card__count">
+                            <div class="card__count-number">78 112</div>
+                            <div class="card__count-percent">436%</div>
+                        </div>
+                        <div class="card__description">переход по рекламным <br> объявлениям</div>
+                        <div class="card__progress">190 руб.</div>
+                        <div class="card__description">в среднем <br> за одно обращение</div>
+                    </li>
+                    <li class="card swiper-slide results__card">
+                        <div class="card__header card_food">
+                            <div class="card__title">Заказ банкетов на теплоходе</div>
+                            <div class="card__subtitle">92 дня с "Таргет Мастер"</div>
+                        </div>
+                        <div class="card__count">
+                            <div class="card__count-number">1 792</div>
+                            <div class="card__count-percent">675%</div>
+                        </div>
+                        <div class="card__description">переход по рекламным <br> объявлениям</div>
+                        <div class="card__progress">на 1 797 000 руб.</div>
+                        <div class="card__description">продаж с рекламы <br> в instagram&facebook</div>
+                    </li>
+                    <li class="card swiper-slide results__card">
+                        <div class="card__header card_coworking">
+                            <div class="card__title">Коворкинг</div>
+                            <div class="card__subtitle">35 дня с "Таргет Мастер"</div>
+                        </div>
+                        <div class="card__count">
+                            <div class="card__count-number">531</div>
+                            <div class="card__count-percent">1 262%</div>
+                        </div>
+                        <div class="card__description">переход по рекламным <br> объявлениям</div>
+                        <div class="card__count">
+                            <div class="card__count-number">531</div>
+                            <div class="card__count-percent">1 262%</div>
+                        </div>
+                        <div class="card__description">целевых действий <br> в карточке организации</div>
+                    </li>
+                    <li class="card swiper-slide results__card">
+                        <div class="card__header card_woman">
+                            <div class="card__title">Женская одежда</div>
+                            <div class="card__subtitle">210 дней с "Таргет Мастер"</div>
+                        </div>
+                        <div class="card__count">
+                            <div class="card__count-number">7 048</div>
+                            <div class="card__count-percent">386%</div>
+                        </div>
+                        <div class="card__description">переход по рекламным <br> объявлениям</div>
+                        <div class="card__progress">490 000 руб.</div>
+                        <div class="card__description">выручки с рекламы <br> в facebook & instagram</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="swiper-pagination"></div>
             <h3 class="main__title results__description">Стартовый рекламный бюджет <br> 90 000 руб. в месяц</h3>
             <div class="results__buttons">
                 <a href="#0" class="button results__button results__button_painted">Запустить рекламу</a>
-                <a href="#0" class=" button results__button">Получить кейсы</a>
+                <a href="#popup" class=" button results__button popup-link">Получить кейсы</a>
             </div>
         </div>
     </div>
@@ -185,13 +254,46 @@
             <h3 class="wrapper main__title automation__subtitle">Обратитесь к нам и освободите время для&nbsp;других важных дел</h3>
             <div class="automation__buttons">
                 <a href="#0" class="button main__button main__button_painted automation__button">Оставить заявку</a>
-                <a href="#0" class="button main__button automation__button">Обратный звонок</a>
+                <a href="#popup" class="button main__button automation__button popup-link">Обратный звонок</a>
             </div>
         </div>
     </div>
+    <aside class="popup" id="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__close">
+                    <span class="visually-hidden">Крестик - закрывает форму (модальное окно) при нажатии</span>
+                </div>
+                <h4 class="popup__title">Оставьте заявку, и мы поможем вам запустить рекламу на площадках facebook & Instagram</h4>
+                <form action="sendmail.php" method="POST" class="popup__form">
+                    <label class="popup__label">
+						<span class="popup__sign"><span>* </span>Имя и фамилия</span>
+						<input type="text" name="name" class="popup__input popup__name" required>
+					</label>
+                    <label class="popup__label">
+						<span class="popup__sign"><span>* </span>Телефон</span>
+						<input type="tel" name="tel" class="popup__input popup__tel " required>
+					</label>
+                    <label class="popup__label">
+						<span class="popup__sign"><span>* </span>Электронная почта</span>
+						<input type="email" name="email" class="popup__input popup__email" required>
+					</label>
+                    <div class="popup__description">Мы перезвоним вам в течение нескольких минут.</div>
+                    <label class="popup__label-check">
+						<span>* </span>
+						<input type="checkbox" required>
+						<span class="popup__agreement">Я даю «Таргет-Мастер» согласие на обработку указанных данных на условиях <a href="project88742/page1482202.html" target="_blank"> Политики конфиденциальности</a> для целей рассмотрения заявки и обратной связи по вопросам ее заполнения.</span>
+					</label>
+                    <button type="submit " class="button main__button_painted popup__button">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </aside>
 
-
-    <script src="js/script.js"></script>
+    <script src="js/change-image.js"></script>
+    <script src="js/popups.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
