@@ -73,6 +73,10 @@ body {
     padding: 0 15px;
 }
 
+.lock {
+    overflow-y: hidden;
+}
+
 .header {
     position: fixed;
     z-index: 10;
@@ -707,6 +711,86 @@ body {
         transition: all .3s ease;
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         background-color: #8a5af1;
+    }
+}
+
+.ad {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    &__wrapper {
+        max-width: 1182px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    &__title {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    &__cards {}
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    &__item {
+        padding: 8px;
+        width: 384px;
+    }
+    &__item-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+        height: 100%;
+        border-radius: 8px;
+    }
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: 280px;
+        border-radius: 8px 8px 0 0;
+        &_purple {
+            background-color: #e8e8ff;
+        }
+        &_green {
+            background-color: #dcf3de;
+        }
+        &_yellow {
+            background-color: #fff3c7;
+        }
+        & img {
+            width: 100%;
+        }
+    }
+    &__subtitle {
+        padding: 0 16px;
+        margin: 16px 0;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    &__description {
+        padding: 0 16px;
+        font-size: 16px;
+        line-height: 1.4;
+        color: #81899a;
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 48px 16px 16px 16px;
+        height: 64px;
+        font-weight: 600;
+        background: #6951ff;
+        color: #fff;
+        letter-spacing: 0.4px;
+        padding: 15px 20px;
+        &:hover {
+            background: #5a46db;
+        }
     }
 }
 

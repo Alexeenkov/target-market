@@ -1,0 +1,101 @@
+html,
+body {
+  background-color: #fff;
+  color: #222426;
+  font-size: 16px;
+}
+
+.header {
+  border-bottom: 1px solid #e3e5ed;
+  background-color: #fff;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.to-home {
+  font-weight: 600;
+  margin-left: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.to-home:hover {
+  color: #6951ff;
+}
+
+.popup-ad__content {
+  background-color: #fff;
+}
+.popup-ad__title-ad {
+  max-width: 900px;
+  margin: 0 auto 55px;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  color: #11385b;
+  margin-bottom: 0;
+  color: #222426;
+}
+.popup-ad__subtitle {
+  margin-top: 15px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: #222426;
+}
+.popup-ad__sign {
+  margin-top: 5px;
+  color: #81899a;
+  font-size: 12px;
+}
+.popup-ad__input {
+  font-size: 16px;
+  border-radius: 8px;
+  height: 64px;
+  background-color: #f7f8fc;
+}
+@media (max-width: 1200px) {
+  .ad__title {
+    max-width: 798px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ad__cards {
+    max-width: 798px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 815px) {
+  .ad__title {
+    text-align: center;
+  }
+  .ad__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 756px) {
+  .to-home {
+    display: none;
+  }
+}
+@media (max-width: 376px) {
+  .ad__title {
+    font-size: 26px;
+  }
+  .ad__item {
+    width: 100%;
+    padding: 0;
+  }
+  .ad__item:nth-child(n+2) {
+    margin-top: 20px;
+  }
+}

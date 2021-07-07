@@ -1,8 +1,9 @@
-const popupLinks = document.querySelectorAll('.popup-link');
+let popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll('.lock-padding');
 const auditButton = document.getElementById('audit-button');
 const popupTitle = document.querySelector('.popup__title');
+const adButton = document.getElementsByClassName('ad__button');
 
 let unlock = true;
 
@@ -61,39 +62,39 @@ function popupClose(popupActive, doUnlock = true) {
 }
 
 function bodyLock() {
-    const lockPaddingValue = window.innerWidth - document.querySelector('body').offsetWidth + 'px';
+    // const lockPaddingValue = window.innerWidth - document.querySelector('body').offsetWidth + 'px';
 
-    if (lockPadding.length > 0) {
-        for (let index = 0; index < lockPadding.length; index++) {
-            const el = lockPadding[index];
-            el.style.paddingRight = lockPaddingValue;
-        }
-    }
-    body.style.paddingRight = lockPaddingValue;
-    body.classList.add('lock');
+    // if (lockPadding.length > 0) {
+    //     for (let index = 0; index < lockPadding.length; index++) {
+    //         const el = lockPadding[index];
+    //         el.style.paddingRight = lockPaddingValue;
+    //     }
+    // }
+    // body.style.paddingRight = lockPaddingValue;
+    // body.classList.add('lock');
 
-    unlock = false;
-    setTimeout(function() {
-        unlock = true;
-    }, timeout);
+    // unlock = false;
+    // setTimeout(function() {
+    //     unlock = true;
+    // }, timeout);
 }
 
 function bodyUnLock() {
-    setTimeout(function() {
-        if (lockPadding.length > 0) {
-            for (let index = 0; index < lockPadding.length; index++) {
-                const el = lockPadding[index];
-                el.style.paddingRight = '0px';
-            }
-        }
-        body.style.paddingRight = '0px';
-        body.classList.remove('lock');
-    }, timeout);
+    // setTimeout(function() {
+    //     if (lockPadding.length > 0) {
+    //         for (let index = 0; index < lockPadding.length; index++) {
+    //             const el = lockPadding[index];
+    //             el.style.paddingRight = '0px';
+    //         }
+    //     }
+    //     body.style.paddingRight = '0px';
+    //     body.classList.remove('lock');
+    // }, timeout);
 
-    unlock = false;
-    setTimeout(function() {
-        unlock = true;
-    }, timeout);
+    // unlock = false;
+    // setTimeout(function() {
+    //     unlock = true;
+    // }, timeout);
 }
 
 document.addEventListener('keydown', function(e) {
@@ -128,6 +129,16 @@ document.addEventListener('keydown', function(e) {
     }
 })();
 
-auditButton.addEventListener('click', () => {
-    popupTitle.textContent = 'Оставьте заявку, и мы проведем аудит Ваших рекламных кампаний, и покажем, как повысить количество заявок';
-});
+if (auditButton) {
+    auditButton.addEventListener('click', () => {
+        popupTitle.textContent = 'Оставьте заявку, и мы проведем аудит Ваших рекламных кампаний, и покажем, как повысить количество заявок';
+    });
+}
+
+
+
+for (let button of adButton) {
+    button.addEventListener('click', () => {
+        popupTitle.textContent = 'Добавьте адрес сайта или соцсети';
+    });
+}

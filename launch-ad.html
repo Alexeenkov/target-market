@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ! Предзагрузка шрифтов -->
+    <link rel="preload" href="fonts/YandexSansText-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/YandexSansText-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    <!-- ! Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--! Подключение файлов CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/launch-ad-style.css">
+    <title>Таргет Мастер - запустить рекламу</title>
+</head>
+
+<body class="lock-padding">
+    <header class="header lock-padding">
+        <div class="wrapper header__wrapper">
+            <div class="header__container">
+                <a href="index.html" class="header__logo">
+                    <img src="img/logo.png" alt="Таргет Мастер">
+                </a>
+                <a href="index.html" class="to-home">На главную</a>
+            </div>
+            <div class="header__buttons">
+                <a href="#" id="header-button" class="button header__button">Оставить заявку</a>
+                <a href="#popup" class="button header__button popup-link">Обратный звонок</a>
+            </div>
+        </div>
+    </header>
+    <main class="ad">
+        <div class="ad__wrapper">
+            <h1 class="ad__title">Что рекламировать?</h1>
+            <div class="ad__cards">
+                <ul class="ad__list">
+                    <li class="ad__item">
+                        <div class="ad__item-wrapper">
+                            <div class="ad__container">
+                                <div class="ad__image ad__image_purple">
+                                    <img src="img/launch-ad/card-1.png" alt="Рекламировать социальную сеть">
+                                </div>
+                                <h2 class="ad__subtitle">Свою социальную сеть</h2>
+                                <div class="ad__description">
+                                    Рекламные объявления приведут пользователей в профиль или на пост в соцсети. Подходит, если продаёте услуги и товары онлайн, хотите увеличить аудиторию в соцсети или охват поста.
+                                </div>
+                            </div>
+                            <a href="#popup-ad" class="button ad__button popup-link">Рекламировать соцсеть</a>
+                        </div>
+                    </li>
+                    <li class="ad__item">
+                        <div class="ad__item-wrapper">
+                            <div class="ad__container">
+                                <div class="ad__image ad__image_green">
+                                    <img src="img/launch-ad/card-2.png" alt="Рекламировать социальную сеть">
+                                </div>
+                                <h2 class="ad__subtitle">Свой интернет-магазин</h2>
+                                <div class="ad__description">
+                                    Если у вас интернет-магазин — подключим автоматическую рекламу всех товаров на сайте! Описание товара, изображение, цена и наличие автоматически загружаются с сайта и обновляются раз в день.
+                                </div>
+                            </div>
+                            <a href="#popup-ad" class="button ad__button popup-link">Рекламировать интернет-магазин</a>
+                        </div>
+                    </li>
+                    <li class="ad__item">
+                        <div class="ad__item-wrapper">
+                            <div class="ad__container">
+                                <div class="ad__image ad__image_yellow">
+                                    <img src="img/launch-ad/card-3.png" alt="Рекламировать социальную сеть">
+                                </div>
+                                <h2 class="ad__subtitle">Свой сайт</h2>
+                                <div class="ad__description">
+                                    Рекламные объявления приведут пользователей на сайт. Подходит, если хотите увеличить количество обращений на сайте.
+                                </div>
+                            </div>
+                            <a href="#popup-ad" class="button ad__button popup-link">Рекламировать сайт</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <aside class="popup" id="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__close">
+                    <span class="visually-hidden">Крестик - закрывает форму (модальное окно) при нажатии</span>
+                </div>
+                <h4 class="popup__title">Оставьте заявку, и мы поможем вам запустить рекламу на площадках facebook & Instagram</h4>
+                <form action="sendmail.php" method="POST" class="popup__form">
+                    <label class="popup__label">
+						<span class="popup__sign"><span>* </span>Имя и фамилия</span>
+						<input type="text" name="name" class="popup__input popup__name" required>
+					</label>
+                    <label class="popup__label">
+						<span class="popup__sign"><span>* </span>Телефон</span>
+						<input type="tel" name="tel" class="popup__input popup__tel " required>
+					</label>
+                    <label class="popup__label">
+						<span class="popup__sign"><span>* </span>Электронная почта</span>
+						<input type="email" name="email" class="popup__input popup__email" required>
+					</label>
+                    <div class="popup__description">Мы перезвоним вам в течение нескольких минут.</div>
+                    <label class="popup__label-check">
+						<span>* </span>
+						<input type="checkbox" required>
+						<span class="popup__agreement">Я даю «Таргет-Мастер» согласие на обработку указанных данных на условиях <a href="project88742/page1482202.html" target="_blank"> Политики конфиденциальности</a> для целей рассмотрения заявки и обратной связи по вопросам ее заполнения.</span>
+					</label>
+                    <button type="submit " class="button main__button_painted popup__button">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </aside>
+    <aside class="popup popup-ad" id="popup-ad">
+        <div class="popup__body">
+            <div class="popup__content popup-ad__content">
+                <div class="popup__close">
+                    <span class="visually-hidden">Крестик - закрывает форму (модальное окно) при нажатии</span>
+                </div>
+                <h4 class="popup__title-ad popup-ad__title-ad">Добавьте адрес сайта или соцсети</h4>
+                <div class="popup-ad__subtitle">Сюда Рекламная подписка приведет ваших потенциальных клиентов</div>
+                <form action="sendmail-2.php" method="POST" class="popup__form">
+                    <label class="popup__label">
+						<input type="text" name="address" class="popup__input popup__name popup-ad__input" placeholder="Введите адрес" required>
+						<span class="popup__sign popup-ad__sign">Например, https://yandex.ru</span>
+					</label>
+                    <label class="popup__label">
+						<input type="text" name="name" class="popup__input popup__tel popup-ad__input" placeholder="Введите имя" required>
+						<span class="popup__sign popup-ad__sign">Например, Иван</span>
+					</label>
+                    <label class="popup__label">
+						<input type="tel" name="tel" class="popup__input popup__email popup-ad__input" placeholder="+9 909 999 99 99" required>
+						<span class="popup__sign popup-ad__sign">Телефон для связи</span>
+					</label>
+                    <label class="popup__label-check">
+						<span>* </span>
+						<input type="checkbox" required>
+						<span class="popup__agreement">Я даю «Таргет-Мастер» согласие на обработку указанных данных на условиях <a href="project88742/page1482202.html" target="_blank"> Политики конфиденциальности</a> для целей рассмотрения заявки и обратной связи по вопросам ее заполнения.</span>
+					</label>
+                    <button type="submit" class="button main__button_painted popup__button">Готово</button>
+                </form>
+            </div>
+        </div>
+    </aside>
+
+    <script src="js/headerButton.js"></script>
+    <script src="js/popups.js"></script>
+</body>
+
+</html>

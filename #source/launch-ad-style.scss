@@ -1,0 +1,115 @@
+html,
+body {
+    background-color: #fff;
+    color: #222426;
+    font-size: 16px;
+}
+
+.header {
+    border-bottom: 1px solid #e3e5ed;
+    background-color: #fff;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.to-home {
+    font-weight: 600;
+    margin-left: 10px;
+    transition: all .3s ease;
+    &:hover {
+        color: #6951ff;
+    }
+}
+
+.popup-ad {
+    &__body {}
+    &__content {
+        background-color: #fff;
+    }
+    &__close {}
+    &__title-ad {
+        max-width: 900px;
+        margin: 0 auto 55px;
+        font-weight: 600;
+        font-size: 32px;
+        text-align: center;
+        color: rgb(17, 56, 91);
+        margin-bottom: 0;
+        color: #222426;
+    }
+    &__subtitle {
+        margin-top: 15px;
+        margin-bottom: 35px;
+        text-align: center;
+        color: #222426;
+    }
+    &__form {}
+    &__label {}
+    &__sign {
+        margin-top: 5px;
+        color: #81899a;
+        font-size: 12px;
+    }
+    &__input {
+        font-size: 16px;
+        border-radius: 8px;
+        height: 64px;
+        background-color: #f7f8fc;
+    }
+    &__name {}
+    &__tel {}
+    &__email {}
+    &__description {}
+    &__label-check {}
+    &__agreement {}
+    &__button {}
+}
+
+@media (max-width: 1200px) {
+    .ad {
+        &__title {
+            max-width: 798px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__cards {
+            max-width: 798px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 815px) {
+    .ad {
+        &__title {
+            text-align: center;
+        }
+        &__list {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 756px) {
+    .to-home {
+        display: none;
+    }
+}
+
+@media (max-width: 376px) {
+    .ad {
+        &__title {
+            font-size: 26px;
+        }
+        &__item {
+            width: 100%;
+            padding: 0;
+            &:nth-child(n+2) {
+                margin-top: 20px;
+            }
+        }
+    }
+}
