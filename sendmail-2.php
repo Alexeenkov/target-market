@@ -26,9 +26,10 @@ $mail->isHTML(true);   // Set email format to HTML
 $name = $_POST['name'];
 $tel = $_POST['tel'];
 $address = $_POST['address'];
+$source = $_POST['source'];
 
 $mail->Subject = 'Пользователь с сайта "24target-master.ru" оставил заявку!';
-$mail->Body = "<b>Имя:</b> {$name}<br><b>Телефон: </b>{$tel}<br><b>Адрес, который необходимо рекламировать:</b> {$address}";
+$mail->Body = "<b>Имя:</b> {$name}<br><b>Телефон: </b>{$tel}<br><b>{$source}</b> {$address}";
 $mail->AltBody = '';
 
 //Отправляем

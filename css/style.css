@@ -952,7 +952,7 @@ body {
         -ms-flex-positive: 1;
             flex-grow: 1;
   }
-  .header__button:nth-child(n+2) {
+  .header__button:first-child {
     display: none;
   }
 

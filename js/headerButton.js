@@ -1,22 +1,19 @@
 let headerButton = document.getElementById('header-button');
 
-changeButtonLink();
+changeNameButton();
 
 window.addEventListener('resize', () => {
-    changeButtonLink();
+    changeNameButton();
 });
 
 function getWindowWidth() {
     return window.innerWidth || document.body.clientWidth;
 }
 
-function changeButtonLink() {
+function changeNameButton() {
     if (getWindowWidth() <= 700) {
-        headerButton.setAttribute('href', '#popup');
-        headerButton.classList.add('popup-link');
-        popupLinks = document.querySelectorAll('.popup-link');
+        headerButton.textContent = 'Оставить заявку';
     } else {
-        headerButton.setAttribute('href', 'launch-ad.html');
-        headerButton.classList.remove('popup-link');
+        headerButton.textContent = 'Обратный звонок';
     }
-}
+};
