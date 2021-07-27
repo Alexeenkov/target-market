@@ -27,9 +27,10 @@ $name = $_POST['name'];
 $tel = $_POST['tel'];
 $address = $_POST['address'];
 $source = $_POST['source'];
+$title = $_POST['for-mail-title'];
 
 $mail->Subject = 'Пользователь с сайта "24target-master.ru" оставил заявку!';
-$mail->Body = "<b>Имя:</b> {$name}<br><b>Телефон: </b>{$tel}<br><b>{$source}</b> {$address}";
+$mail->Body = "<b>{$title}</b></b><br><br><b>Имя:</b> {$name}<br><b>Телефон: </b>{$tel}<br><b>{$source}</b> {$address}";
 $mail->AltBody = '';
 
 //Отправляем

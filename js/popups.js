@@ -1,9 +1,6 @@
 let popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll('.lock-padding');
-const auditButton = document.getElementById('audit-button');
-const popupTitle = document.querySelector('.popup__title');
-const adButton = document.getElementsByClassName('ad__button');
 
 let unlock = true;
 
@@ -128,17 +125,3 @@ document.addEventListener('keydown', function(e) {
             Element.prototype.msMatchesSelector;
     }
 })();
-
-if (auditButton) {
-    auditButton.addEventListener('click', () => {
-        popupTitle.textContent = 'Оставьте заявку, и мы проведем аудит Ваших рекламных кампаний, и покажем, как повысить количество заявок';
-    });
-}
-
-
-
-for (let button of adButton) {
-    button.addEventListener('click', () => {
-        popupTitle.textContent = 'Добавьте адрес сайта или соцсети';
-    });
-}
