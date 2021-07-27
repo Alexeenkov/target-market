@@ -55,7 +55,6 @@ body {
     font-weight: 400;
     font-style: normal;
     font-family: 'YS Text', 'Arial', 'Helvetica', sans-serif;
-    overflow-x: hidden;
 }
 
 .visually-hidden {
@@ -64,6 +63,10 @@ body {
     width: 1px;
     height: 1px;
     clip: rect(1px, 1px, 1px, 1px);
+}
+
+body.lock {
+    overflow-y: hidden;
 }
 
 
@@ -337,6 +340,7 @@ body {
     }
     &__cards {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         width: 100%;
         justify-content: center;
