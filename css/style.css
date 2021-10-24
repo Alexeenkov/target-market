@@ -45,7 +45,7 @@ button {
 html,
 body {
   background-color: #f7f7f2;
-  min-width: 360px;
+  min-width: 320px;
   font-weight: 400;
   font-style: normal;
   font-family: "YS Text", "Arial", "Helvetica", sans-serif;
@@ -58,6 +58,10 @@ body {
   width: 1px;
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+body.lock {
+  overflow-y: hidden;
 }
 
 /* ! ------------------------styles------------------ */
@@ -372,12 +376,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
 }
 .results__cards_pc {
   display: -webkit-box;
